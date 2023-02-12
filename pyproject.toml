@@ -9,6 +9,7 @@ packages = [{include = "personal_portfolio"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "3.2.6"
+pillow = "^9.4.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
