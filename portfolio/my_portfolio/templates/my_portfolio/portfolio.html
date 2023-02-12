@@ -1,0 +1,14 @@
+{% extends 'my_portfolio/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <section>
+        <div id="sec_options" class="container text-left">
+            <h1>Portfolio</h1>
+            {% for project in projects %}
+            <h1>{{ project.title }}</h1>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
