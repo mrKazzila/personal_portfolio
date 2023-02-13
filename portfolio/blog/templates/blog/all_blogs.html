@@ -1,3 +1,4 @@
+{% load humanize %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,9 @@
 <body>
 <h1>My blog</h1>
 {% for blog in blogs %}
-
-
+<a href="{% url 'blog:detail' blog.id %}">{{ blog.title }}</a>
+{{ blog.description }}
+{{ blog.date_creation|naturalday }}
 {% endfor %}
 </body>
 </html>
