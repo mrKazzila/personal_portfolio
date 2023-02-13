@@ -1,5 +1,4 @@
 <h1 align="center">
-  <br>
   <a href="https://stepik.org/course/101042/info">
     <img src="readme/stepik.jpeg"
     alt="Stepik" width="200">
@@ -8,7 +7,6 @@
   Personal portfolio project 
   <br>
 </h1>
-
 
 
 <h4 align="center">
