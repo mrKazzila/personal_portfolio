@@ -1,44 +1,73 @@
 {% load static %}
 
+<!doctype html>
 <html lang="en">
 
-    <head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <title>{{ title }}</title>
-        <!-- Bootstrap core CSS -->
-        <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'vendor/css/custom.css' %}">
 
-        <!-- Custom styles for this template -->
-        <link href="{% static '/vendor/css/index.css' %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-<!--        <header>-->
-<!--            <div class="container text-left">-->
-<!--                <h1>Password generator</h1>-->
-<!--            </div>-->
-<!--        </header>-->
+  <link rel="icon" type="image/png" href="{% static '/vendor/img/Logo.png' %}">
 
-    </head>
+  <title>Kazzila</title>
+</head>
 
-    <body>
+<body>
 
-        <!-- Page Content -->
-        {% block content %} {% endblock %}
-        <!-- Bootstrap core JavaScript -->
-        <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
-        <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"></script>
+  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href=#">
+        <img src="{% static '/vendor/img/Logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Kazzila's Logo">
+        <span>Ilya Kazakov</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- FontAwesome script -->
-        <script src="{% static '/vendor/fontawesome/fontawesome-icons.js' %}" crossorigin="anonymous"></script>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% static 'vendor/docs/resume.pdf' %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/i-kazakov/" target="_blank">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:mrkazzila@gmail.com" target="_blank">Mail</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Portfolio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'blog:blogs' %}">Blogs</a>
+  </li>
+</ul>
 
 
-    </body>
+  <!-- My content -->
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 
 </html>
