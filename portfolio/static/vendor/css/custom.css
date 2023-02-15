@@ -15,7 +15,7 @@ body {
 }
 
 @media (min-width: 992px) {
-    #hometext {
+    #my_portfoliotext {
         font-size: 4rem;
     }
     #blogdetailtitle {
@@ -29,4 +29,17 @@ body {
   border-radius: 50%;
   width: 100%;
   padding-top: 100%;
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+}
+.links-portfolio {
+    text-decoration: none;
+    color: rgba(0,0,0,1) !important;
+}
+.links-portfolio:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,.5) !important;
 }

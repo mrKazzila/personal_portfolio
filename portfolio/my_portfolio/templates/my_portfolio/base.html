@@ -10,11 +10,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
   <link rel="stylesheet" href="{% static 'vendor/css/custom.css' %}">
-
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
   <link rel="icon" type="image/png" href="{% static '/vendor/img/Logo.png' %}">
 
   <title>Kazzila</title>
@@ -24,6 +21,7 @@
 
   <nav id="topNav" class="navbar navbar-expand-md navbar-light">
     <div class="container">
+
       <a class="navbar-brand" href=#">
         <img src="{% static '/vendor/img/Logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Kazzila's Logo">
         <span>Ilya Kazakov</span>
@@ -45,18 +43,20 @@
           </li>
         </ul>
       </div>
+
     </div>
   </nav>
 
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="/">Portfolio</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'blog:blogs' %}">Blogs</a>
-  </li>
-</ul>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link links-portfolio" aria-current="page" href="/">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link links-portfolio" href="{% url 'blog:blogs' %}">Blogs</a>
+    </li>
+  </ul>
 
+  <br>
 
   <!-- My content -->
   <div class="container">
