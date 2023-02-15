@@ -32,16 +32,14 @@
 
 
 ## Features
-* Generate random password use
-  - letter
-  - upper case letter
-  - numbers
-  - symbols
-* Copy password to clipboard
+* Simple portfolio & blog 
+  - add projects in portfolio
+  - add and viewing posts in blog
 
 
 ## Tech stack
-[Django 3](https://www.djangoproject.com/download/)
+ - [Django 3](https://www.djangoproject.com/download/)
+ - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
 ## How To Use
