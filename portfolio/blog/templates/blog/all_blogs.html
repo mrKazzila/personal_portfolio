@@ -6,24 +6,20 @@
 
 <h1 id="blogtitle" class="font-weight-bold text-center">Blog</h1>
 
-<!--<h3 class="text-center mb-5">-->
-<!--    Nick has written {{ blogs.count }} blog{{ blogs.count|pluralize }}-->
-<!--</h3>-->
-
 {% for blog in blogs %}
 <div class="row justify-content-center my-3">
   <div class="col-md-10">
     <a href="{% url 'blog:detail' blog.id %}">
-      <h2>
+      <h3>
           {{ blog.title }}
-      </h2>
+      </h3>
     </a>
-    <h5 class="text-muted">
+    <h6 class="text-muted">
         {{ blog.date|date:'M d Y'|upper }}
-    </h5>
-    <h4>
+    </h6>
+    <h5>
         {{ blog.description|striptags|truncatechars:100 }}
-    </h4>
+    </h5>
   </div>
 </div>
 {% endfor %}
