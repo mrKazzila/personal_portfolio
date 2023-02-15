@@ -13,7 +13,7 @@ class BlogView(TitleMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['blogs'] = self.model.objects.all()[:3]
+        context['blogs'] = self.model.objects.all().order_by('-date_creation')
         return context
 
 
