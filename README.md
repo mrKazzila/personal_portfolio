@@ -78,7 +78,7 @@ poetry install --no-dev
 cd portfolio
 ```
 
-7. Run the app
+7. Apply migrations
 ```bash
 python manage.py migrate
 ```
