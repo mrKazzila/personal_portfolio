@@ -48,6 +48,10 @@ To clone and run this project, you'll need:
 - [Python](https://www.python.org/downloads/)
 - [Poetry](https://python-poetry.org/docs/#installation)
 
+
+<details>
+<summary>Step-by-step commands</summary>
+
 1. Clone this repository
 ```bash
 git clone git@github.com:Kazzila/personal_portfolio.git
@@ -90,6 +94,7 @@ python manage.py runserver
 
 9. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
+</details>
 
 <br>
 <br>
