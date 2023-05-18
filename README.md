@@ -54,7 +54,7 @@ To clone and run this project, you'll need:
 
 1. Clone this repository
 ```bash
-git clone git@github.com:Kazzila/personal_portfolio.git
+git clone git@github.com:mrKazzila/personal_portfolio.git
 ```
 
 2. Go into the repository
@@ -99,7 +99,7 @@ python manage.py runserver
 <br>
 <br>
 <p align="center">
-  <a href="https://github.com/Kazzila">GitHub</a> •
-  <a href="https://kazzila.github.io/resume/">Resume</a> •
+  <a href="https://github.com/mrKazzila">GitHub</a> •
+  <a href="https://mrkazzila.github.io/resume/">Resume</a> •
   <a href="https://www.linkedin.com/in/i-kazakov/">LinkedIn</a>
 </p>
