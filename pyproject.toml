@@ -1,19 +1,19 @@
 [tool.poetry]
 name = "personal-portfolio"
-version = "1.0.0"
-description = "Django project from stepik course. Personal portfolio"
-authors = ["kazila <mrkazzila@gmail.com>"]
+version = "2.0.0"
+description = "Stepik course. Simple personal portfolio website using django3"
+authors = ["mrKazzila <mrkazzila@gmail.com>"]
 readme = "README.md"
-packages = [{include = "personal_portfolio"}]
+
 
 [tool.poetry.dependencies]
 python = "^3.11"
+python-dotenv = "^1.0.0"
 django = "3.2.6"
 pillow = "^9.4.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
-isort = "^5.12.0"
 flake8-import-order = "^0.18.2"
 flake8-docstrings = "^1.7.0"
 flake8-builtins = "^2.1.0"
@@ -21,7 +21,20 @@ flake8-quotes = "^3.3.2"
 flake8-bugbear = "^23.1.20"
 flake8-commas = "^2.1.0"
 pep8-naming = "^0.13.3"
+yapf = "^0.33.0"
+toml = "^0.10.2"
+pre-commit = "^3.3.0"
+bandit = "^1.7.5"
+
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.yapfignore]
+ignore_patterns = [
+  ".venv/*",
+  "**/migrations/*",
+  "app/manage.py",
+]
