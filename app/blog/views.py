@@ -7,6 +7,8 @@ from .models import BlogModel
 
 
 class BlogView(TitleMixin, ListView):
+    """Page with all posts"""
+
     title = 'Blog'
     template_name = 'blog/all_blogs.html'
     model = BlogModel
@@ -18,6 +20,7 @@ class BlogView(TitleMixin, ListView):
 
 
 def detail(request, blog_id):
+    """Detail post page"""
     blog = get_object_or_404(BlogModel, pk=blog_id)
     return render(
         request,
