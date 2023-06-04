@@ -1,0 +1,50 @@
+{% extends "my_portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="row justify-content-center mb-3">
+  <div class="content-center col-5">
+    <div class="text-center">
+    <img src="{% static 'vendor/img/Kazakov_Ilya_Python_Developer.png' %}"
+         class="img-fluid"
+        alt="Avatar Kazakov Ilya"
+        title="Kazakov Ilya">
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center mb-5">
+  <div class="col-md-9 text-center">
+    <h3 id="hometext" class="font-weight-bold">
+      Ilya Kazakov
+      <br>
+      Yet another python developer
+    </h3>
+    <hr>
+  </div>
+</div>
+
+
+
+<div class="row">
+  {% for project in projects %}
+  <div class="col-lg-4 col-md-6">
+
+    {% if project.url %}
+    <a href="{{ project.url }}">
+      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    </a>
+    {% else %}
+
+    <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    {% endif %}
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

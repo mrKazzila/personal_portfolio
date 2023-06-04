@@ -1,0 +1,45 @@
+.navbar-nav .nav-link {
+    color: rgba(0,0,0,1) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.5) !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#blogtitle {
+    font-size: 6rem;
+}
+
+@media (min-width: 992px) {
+    #my_portfoliotext {
+        font-size: 4rem;
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+}
+.circle-cropper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+}
+.links-portfolio {
+    text-decoration: none;
+    color: rgba(0,0,0,1) !important;
+}
+.links-portfolio:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,.5) !important;
+}
