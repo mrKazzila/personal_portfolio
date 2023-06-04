@@ -1,12 +1,12 @@
 [flake8]
-max-line-length = 120
+max-line-length = 119
 max-complexity = 10
 inline-quotes = '
 
 exclude =
-    migration,
-    .venv,
-    manage.py,
+    ../.venv,
+    ../**/migrations/*,
+    ../app/manage.py,
 
 ignore =
     E722,
@@ -20,3 +20,4 @@ ignore =
     D400,
     I100,
     I201,
+    Q003
